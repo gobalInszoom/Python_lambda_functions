@@ -1,0 +1,40 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "config:DeliverConfigSnapshot",
+                "config:DescribeConfigRules",
+                "config:DescribeConfigRuleEvaluationStatus",
+                "config:GetComplianceDetailsByConfigRule",
+                "config:GetComplianceSummaryByConfigRule",
+                "iam:GetUser",
+                "iam:GetRolePolicy",
+                "iam:GetPolicy",
+                "iam:GetPolicyVersion",
+                "iam:GetRole",
+                "iam:GetRolePolicy",
+                "iam:GetSAMLProvider",
+                "iam:ListAccessKeys",
+                "iam:ListAttachedGroupPolicies",
+                "iam:ListAttachedRolePolicies",
+                "iam:ListAttachedUserPolicies",
+                "iam:ListGroupPolicies",
+                "iam:ListPolicies",
+                "iam:ListRolePolicies",
+                "iam:ListRoles",
+                "cloudtrail:DescribeTrails",
+                "ec2:DescribeInstances",
+                "ec2:DescribeReservedInstances",
+                "ec2:DescribeSnapshots",
+                "ec2:DescribeRegions",
+                "ec2:DescribeKeyPairs",
+                "tag:GetResources"
+            ],
+            "Resource": [
+                "*"
+            ]
+        }
+    ]
+}

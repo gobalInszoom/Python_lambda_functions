@@ -1,0 +1,1 @@
+This directory contains wrapper Terraform modules for the AWS resources. The main purpose of the wrappers is to standardize and enforce AWS resource tagging.

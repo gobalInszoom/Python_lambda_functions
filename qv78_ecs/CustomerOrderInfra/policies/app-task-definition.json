@@ -1,0 +1,27 @@
+ [
+        {
+            "environment": [],
+            "name": "tf-simple-app",
+            "image": "amazon/amazon-ecs-sample",
+            "cpu": 10,
+            "memory": 800,
+            "portMappings": [
+                {
+                    "containerPort": 80,
+                    "hostPort": 80
+                }
+            ],
+            "mountPoints": [
+                {
+                    "sourceVolume": "my-vol",
+                    "containerPath": "/var/www/my-vol"
+                }
+            ],
+            "entryPoint": [
+                "/usr/sbin/apache2",
+                "-D",
+                "FOREGROUND"
+            ],
+            "essential": true
+        }
+   ]

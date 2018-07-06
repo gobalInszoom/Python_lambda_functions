@@ -1,0 +1,27 @@
+{
+  "tesco-app-admin": [
+    "tesco-full-access",
+    "tesco-cloud-trail-deny-disable"
+  ],
+  "tesco-app-developer": [
+    "tesco-full-route53-access",
+    "tesco-read-iam",
+    "tesco-read-trusted-advisor",
+    "tesco-full-lambda-access",
+    "tesco-read-cloud-trail",
+    "tesco-full-ec2-access",
+    "tesco-read-portal",
+    "tesco-full-s3-access"
+  ],
+  "tesco-app-productowner": [
+    "tesco-read-trusted-advisor",
+    "tesco-read-cloud-trail",
+    "tesco-full-iam-access",
+    "tesco-read-portal"
+  ],
+  "tesco-app-tester": [
+    "tesco-read-ec2",
+    "tesco-read-route53",
+    "tesco-read-s3"
+  ]
+}

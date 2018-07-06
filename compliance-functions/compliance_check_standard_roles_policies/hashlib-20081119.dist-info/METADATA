@@ -1,0 +1,14 @@
+Metadata-Version: 2.0
+Name: hashlib
+Version: 20081119
+Summary: Secure hash and message digest algorithm library
+Home-page: http://code.krypto.org/python/hashlib/
+Author: Gregory P. Smith
+Author-email: greg at krypto dot org
+License: PSF license
+Platform: UNKNOWN
+
+This is a stand alone packaging of the hashlib
+library introduced in Python 2.5 so that it can
+be used on older versions of Python.
+

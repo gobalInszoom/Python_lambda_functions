@@ -1,0 +1,26 @@
+{
+                "compliance_root_mfa_enabled": [{
+                        "run_time":"python2.7",
+                        "handler_name":"compliance_root_mfa_enabled",
+                        "description":"Check if ROOT account MFA is enabled",
+                        "input_parameters":{},
+                        "trigger_type": "ScheduledNotification",
+                        "resource_type": [],
+                        "tags": {
+                                "tesco_tier":"api"
+                        }
+                }],
+                "compliance_iam_access_key_rotation": [{
+                        "run_time":"python2.7",
+                        "handler_name":"compliance_iam_access_key_rotation",
+                        "description":"Check if IAM accesskey age is 90 days or less",
+                        "input_parameters":{
+                                          "maximumAccessKeyAge": "90"
+                                           },
+                        "trigger_type": "ConfigurationItemChangeNotification",
+                        "resource_type": ["AWS::IAM::User"],
+                        "tags": {
+                                "tesco_tier":"api"
+                        }
+                }]
+}
